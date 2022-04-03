@@ -6,7 +6,6 @@ function addR() {
     //alert("Clicked Add Row")
     let grid = document.getElementById("grid");
     let rows = document.getElementsByTagName("tr");
-    console.log(rows.length);
 
     if (rows.length === 0) {
         let row = document.createElement("tr");
@@ -16,6 +15,7 @@ function addR() {
         };
         row.appendChild(col);
         grid.appendChild(row);
+        console.log(rows.length);
     }
     else {
         let cols = document.getElementsByTagName("td");
@@ -26,7 +26,8 @@ function addR() {
         };
         row.appendChild(col);
         grid.appendChild(row);
-    }
+        console.log(rows.length);
+    }console.log(babehs)
 }
 //Adds a column
 function addC() {
@@ -37,23 +38,24 @@ function addC() {
     let col = document.createElement("td");
     let row = document.createElement("tr");
 
-    console.log("cols " + cols.length);
+    //console.log("cols " + cols.length);
     //we only add columns if rows is >= 1
-    //if (rows.length > 0)
+    //console.log(rows.length)
     //iterate through rows and insert a table
 //      function appendColumn() {
-        var tbl = document.getElementsByTagName("grid");
+        // var tbl = document.getElementsByTagName("grid");
         //console.log(tbl.rows() + "is row ")
 
-        for (let i = 0; i < rows.length; i++) {
-          grid[i].appendChild(col);
-        }
+        // for (let i = 0; i < rows.length; i++) {
+        //   grid[i].appendChild(col);
+        // }
         //for (const p of grid) {
           //appendChild(col);
         //}
 //      }
       //if (rows.length > 0){appendColumn();}
-//    appendColumn();
+  //    appendColumn();
+    console.log(babehs);
 }
 
 //Removes a row
